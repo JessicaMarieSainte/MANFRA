@@ -4,88 +4,169 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/index.38ec9247.css"> <!--je mets un import de chaque feuille de scss dans style.scss(une feuille par block de html, il avait fait ça en cours)-->
+    <link rel="stylesheet" href="/index.38ec9247.css">
+    <!--je mets un import de chaque feuille de scss dans style.scss(une feuille par block de html, il avait fait ça en cours)-->
     <script defer="" href="/app.a56319bd.js"></script>
     <title>MANFRA</title>
   </head>
   <body>
-      <!--header avec logo et loupe de recherche-->
+    <!--header avec logo et loupe de recherche-->
     <header class="header">
-      <div class="header__logo">MANFRA</div>
       <div class="header__search">
-          <form action="">
-              <!--je vais le mettre enforme avec label tout ça...-->
-            <img class="search__loupe" src="/loupe.22572461.png" alt="loupe recherche">
-          </form>
-       
-      </div>  
+        <figure class="header__search_logo">
+          <!--<img src="./assets/Gomu_Logo-01-copie-1024x1024.png" alt="" />-->
+        </figure>
+        <figure>
+          <!--<img class="header__search_profil"
+              src="./assets/32466742a1e73f2819562259e1734797.549x549x1.jpg"
+              alt=""
+            />-->
+        </figure>
+        <form>
+          <figure>
+            <!--<img class="header__search_loupe" src="./assets/31179.svg" alt="" />-->
+          </figure>
+        </form>
+      </div>
     </header>
     <!--main pour regrouper toutes les sections qui s'enchainent-->
     <main class="main">
-<h1>
-    Ceci est un test
-</h1>
+    
 
-            <section class="aLaUne">
-                <div class="aLaUne__visual">
-                    <p>A la Une</p>
-                    <!--Il y aura surement du contenu image ou video à intégrer ici--> <div class="aLaUne__picture">1</div>
-                </div>
-            </section>
-            <!--les 3 sections qui s'enchainent ont la même structure seul le texte ou le contenu image ou vidéo va différer donc je leur ai mis les mêmes noms (seule la classe de l'élément "section" differe au cas où on aurait besoin d'en cibler un)
+      <section class="aLaUne">
+        <div class="aLaUne__visual">
+          <p>A la Une</p>
+          <!--Il y aura surement du contenu image ou video à intégrer ici-->
+          <div class="aLaUne__picture">1</div>
+        </div>
+      </section>
+      <!--les 3 sections qui s'enchainent ont la même structure seul le texte ou le contenu image ou vidéo va différer donc je leur ai mis les mêmes noms (seule la classe de l'élément "section" differe au cas où on aurait besoin d'en cibler un)
             Il faut réfléchir aussi au display media que l'on intègre peut etre sur la photo ou bouton visualiser????-->
-            <section class="caroussel">
-                <div class="caroussel__title">Les plus populaires</div>
-                <div class="caroussel__vignette">
-                    <!--ce sera une image à mettre dans chaque div, pour le moment j'ai mis juste du texte pour faire des tests-->
-                    <span class="caroussel__picture">
-                        <img src="/téléchargement.bc786be8.jpeg" alt="Dofus" class="caroussel__picture__img">
-                        <a class="caroussel__picture__add" href="#">
-                            <img src="/signet.57c4f5a8.png" alt="ajouter à sa liste">
-                        </a>
-                    </span>
-                    <span class="caroussel__picture"><img src="/téléchargement.bc786be8.jpeg" alt="Dofus" class="caroussel__picture"></span>
-                    <span class="caroussel__picture"><img src="/téléchargement.bc786be8.jpeg" alt="Dofus" class="caroussel__picture"></span>
-                    <span class="caroussel__picture"><img src="/téléchargement.bc786be8.jpeg" alt="Dofus" class="caroussel__picture"></span>
-                    <span class="caroussel__picture"><img src="/téléchargement.bc786be8.jpeg" alt="Dofus" class="caroussel__picture"></span>
-                    <span class="caroussel__picture"> <img src="/téléchargement.bc786be8.jpeg" alt="Dofus" class="caroussel__picture"></span>
-                    <span class="caroussel__picture"><img src="/téléchargement.bc786be8.jpeg" alt="Dofus" class="caroussel__picture"></span>
-                    <span class="caroussel__picture"><img src="/téléchargement.bc786be8.jpeg" alt="Dofus" class="caroussel__picture"></span>
-                    
-                    
-                    
-                    
-                    
-                   
-                    
-                    
-                </div>
-            </section>
-            <section class="caroussel">
-                <div class="caroussel__title">Visualisations en cours</div>
-                <div class="caroussel__vignette">
-                    <img src="/téléchargement.bc786be8.jpeg" alt="Dofus" class="caroussel__picture">
-                    <img src="/téléchargement.bc786be8.jpeg" alt="Dofus" class="caroussel__picture">
-                    <img src="/téléchargement.bc786be8.jpeg" alt="Dofus" class="caroussel__picture">
-                    <img src="/téléchargement.bc786be8.jpeg" alt="Dofus" class="caroussel__picture">
-                </div>
-            </section>
-            <section class="caroussel">
-                <div class="caroussel__title">Selon vos favoris</div>
-                <div class="caroussel__vignette">
-                    <img src="/téléchargement.bc786be8.jpeg" alt="Dofus" class="caroussel__picture">
-                    <img src="/téléchargement.bc786be8.jpeg" alt="Dofus" class="caroussel__picture">
-                    <img src="/téléchargement.bc786be8.jpeg" alt="Dofus" class="caroussel__picture">
-                    <img src="/téléchargement.bc786be8.jpeg" alt="Dofus" class="caroussel__picture">
-            </div></section>
-            <!--nav en position fixe en bas-->
+      <section class="caroussel">
+        <div class="caroussel__title">Les plus populaires</div>
+        <div class="caroussel__vignette">
+          <button class="vignette__fleche__gauche">
+            <img src="/fleche-fine-contour-vers-la-gauche.f9ab0b51.png" alt="slide à gauche">
+        </button>
+        <button class="vignette__fleche__droite">
+            <img src="/fleche-droite.aceea603.png" alt="slide à gauche">
+        </button>
+          <span class="caroussel__picture">
+            <img src="/téléchargement.bc786be8.jpeg" alt="Dofus" class="caroussel__picture__img">
+            <a class="caroussel__picture__add" href="#">
+              <img src="/signet.57c4f5a8.png" alt="ajouter à sa liste">
+            </a>
+          </span>
+          <span class="caroussel__picture"><img src="/téléchargement.bc786be8.jpeg" alt="Dofus" class="caroussel__picture__img">
+            <a class="caroussel__picture__add" href="#">
+              <img src="/signet.57c4f5a8.png" alt="ajouter à sa liste"> </a></span>
+          <span class="caroussel__picture"><img src="/téléchargement.bc786be8.jpeg" alt="Dofus" class="caroussel__picture__img">
+            <a class="caroussel__picture__add" href="#">
+              <img src="/signet.57c4f5a8.png" alt="ajouter à sa liste"> </a></span>
+          <span class="caroussel__picture"><img src="/téléchargement.bc786be8.jpeg" alt="Dofus" class="caroussel__picture__img">
+            <a class="caroussel__picture__add" href="#">
+              <img src="/signet.57c4f5a8.png" alt="ajouter à sa liste"> </a></span>
+          <span class="caroussel__picture"><img src="/téléchargement.bc786be8.jpeg" alt="Dofus" class="caroussel__picture__img">
+            <a class="caroussel__picture__add" href="#">
+              <img src="/signet.57c4f5a8.png" alt="ajouter à sa liste"> </a></span>
+          <span class="caroussel__picture">
+            <img src="/téléchargement.bc786be8.jpeg" alt="Dofus" class="caroussel__picture__img">
+            <a class="caroussel__picture__add" href="#">
+              <img src="/signet.57c4f5a8.png" alt="ajouter à sa liste"> </a></span>
+          <span class="caroussel__picture"><img src="/téléchargement.bc786be8.jpeg" alt="Dofus" class="caroussel__picture__img">
+            <a class="caroussel__picture__add" href="#">
+              <img src="/signet.57c4f5a8.png" alt="ajouter à sa liste"> </a></span>
+          <span class="caroussel__picture"><img src="/téléchargement.bc786be8.jpeg" alt="Dofus" class="caroussel__picture__img">
+            <a class="caroussel__picture__add" href="#">
+              <img src="/signet.57c4f5a8.png" alt="ajouter à sa liste"> </a></span>
+        </div>
+      </section>
+      <section class="caroussel">
+        <div class="caroussel__title">Visualisations en cours</div>
+        <div class="caroussel__vignette">
+            <button class="vignette__fleche__gauche">
+                <img src="/fleche-fine-contour-vers-la-gauche.f9ab0b51.png" alt="slide à gauche">
+            </button>
+            <button class="vignette__fleche__droite">
+                <img src="/fleche-droite.aceea603.png" alt="slide à gauche">
+            </button>
+          <span class="caroussel__picture">
+            <img src="/téléchargement.bc786be8.jpeg" alt="Dofus" class="caroussel__picture__img">
+            <a class="caroussel__picture__add" href="#">
+              <img src="/signet.57c4f5a8.png" alt="ajouter à sa liste">
+            </a>
+          </span>
+          <span class="caroussel__picture"><img src="/téléchargement.bc786be8.jpeg" alt="Dofus" class="caroussel__picture__img">
+            <a class="caroussel__picture__add" href="#">
+              <img src="/signet.57c4f5a8.png" alt="ajouter à sa liste"> </a></span>
+          <span class="caroussel__picture"><img src="/téléchargement.bc786be8.jpeg" alt="Dofus" class="caroussel__picture__img">
+            <a class="caroussel__picture__add" href="#">
+              <img src="/signet.57c4f5a8.png" alt="ajouter à sa liste"> </a></span>
+          <span class="caroussel__picture"><img src="/téléchargement.bc786be8.jpeg" alt="Dofus" class="caroussel__picture__img">
+            <a class="caroussel__picture__add" href="#">
+              <img src="/signet.57c4f5a8.png" alt="ajouter à sa liste"> </a></span>
+          <span class="caroussel__picture"><img src="/téléchargement.bc786be8.jpeg" alt="Dofus" class="caroussel__picture__img">
+            <a class="caroussel__picture__add" href="#">
+              <img src="/signet.57c4f5a8.png" alt="ajouter à sa liste"> </a></span>
+          <span class="caroussel__picture">
+            <img src="/téléchargement.bc786be8.jpeg" alt="Dofus" class="caroussel__picture__img">
+            <a class="caroussel__picture__add" href="#">
+              <img src="/signet.57c4f5a8.png" alt="ajouter à sa liste"> </a></span>
+          <span class="caroussel__picture"><img src="/téléchargement.bc786be8.jpeg" alt="Dofus" class="caroussel__picture__img">
+            <a class="caroussel__picture__add" href="#">
+              <img src="/signet.57c4f5a8.png" alt="ajouter à sa liste"> </a></span>
+          <span class="caroussel__picture"><img src="/téléchargement.bc786be8.jpeg" alt="Dofus" class="caroussel__picture__img">
+            <a class="caroussel__picture__add" href="#">
+              <img src="/signet.57c4f5a8.png" alt="ajouter à sa liste"> </a></span>
+        </div>
+      </section>
+      <section class="caroussel">
+        
+        <div class="caroussel__title">Selon mes favoris</div>
+        <div class="caroussel__vignette">
+            <button class="vignette__fleche__gauche">
+                <img src="/fleche-fine-contour-vers-la-gauche.f9ab0b51.png" alt="slide à gauche">
+            </button>
+            <button class="vignette__fleche__droite">
+                <img src="/fleche-droite.aceea603.png" alt="slide à gauche">
+            </button>
+        <span class="caroussel__picture">
+          <img src="/téléchargement.bc786be8.jpeg" alt="Dofus" class="caroussel__picture__img">
+          <a class="caroussel__picture__add" href="#">
+            <img src="/signet.57c4f5a8.png" alt="ajouter à sa liste">
+          </a>
+        </span>
+        <span class="caroussel__picture"><img src="/téléchargement.bc786be8.jpeg" alt="Dofus" class="caroussel__picture__img">
+          <a class="caroussel__picture__add" href="#">
+            <img src="/signet.57c4f5a8.png" alt="ajouter à sa liste"> </a></span>
+        <span class="caroussel__picture"><img src="/téléchargement.bc786be8.jpeg" alt="Dofus" class="caroussel__picture__img">
+          <a class="caroussel__picture__add" href="#">
+            <img src="/signet.57c4f5a8.png" alt="ajouter à sa liste"> </a></span>
+        <span class="caroussel__picture"><img src="/téléchargement.bc786be8.jpeg" alt="Dofus" class="caroussel__picture__img">
+          <a class="caroussel__picture__add" href="#">
+            <img src="/signet.57c4f5a8.png" alt="ajouter à sa liste"> </a></span>
+        <span class="caroussel__picture"><img src="/téléchargement.bc786be8.jpeg" alt="Dofus" class="caroussel__picture__img">
+          <a class="caroussel__picture__add" href="#">
+            <img src="/signet.57c4f5a8.png" alt="ajouter à sa liste"> </a></span>
+        <span class="caroussel__picture">
+          <img src="/téléchargement.bc786be8.jpeg" alt="Dofus" class="caroussel__picture__img">
+          <a class="caroussel__picture__add" href="#">
+            <img src="/signet.57c4f5a8.png" alt="ajouter à sa liste"> </a></span>
+        <span class="caroussel__picture"><img src="/téléchargement.bc786be8.jpeg" alt="Dofus" class="caroussel__picture__img">
+          <a class="caroussel__picture__add" href="#">
+            <img src="/signet.57c4f5a8.png" alt="ajouter à sa liste"> </a></span>
+        <span class="caroussel__picture"><img src="/téléchargement.bc786be8.jpeg" alt="Dofus" class="caroussel__picture__img">
+          <a class="caroussel__picture__add" href="#">
+            <img src="/signet.57c4f5a8.png" alt="ajouter à sa liste"> </a></span>
+      </div></section>
+      <!--nav en position fixe en bas-->
       <nav class="navBottom">
-          <!--svg à mettre dans les div, j'ai mis 1... pour les tests-->
-          <div class="navBottom__home">1</div>
-          <div class="navBottom__addproject">2</div>
-          <div class="navBottom__feed">3</div>
-          <div class="navBottom__chat">4</div>
-          <div class="navBottom__profil">5</div>
+        <!--svg à mettre dans les div, j'ai mis 1... pour les tests-->
+        <div class="navBottom__home">1</div>
+        <div class="navBottom__addproject">2</div>
+        <div class="navBottom__feed">3</div>
+        <div class="navBottom__chat">4</div>
+        <div class="navBottom__profil">5</div>
       </nav>
     </main>
     <footer class="footer">footer</footer>

@@ -44,7 +44,7 @@ table {
 }
 
 .caroussel .caroussel__title {
-  padding: 1.25rem 0 1rem 3px;
+  padding: 1rem 0 3px 3px;
   font-size: 1rem;
 }
 
@@ -57,8 +57,8 @@ table {
 }
 
 .caroussel .caroussel__vignette img.caroussel__picture__img {
-  min-width: 100px;
-  border-radius: 5px;
+  width: 100px;
+  border-radius: 8px;
 }
 
 .caroussel__picture {
@@ -66,13 +66,43 @@ table {
 }
 
 .caroussel__picture__add {
+  transform: translate(50% 50%);
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 3px;
+  right: 3px;
 }
 
 .caroussel__picture__add img {
-  width: 30px;
+  width: 20px;
+}
+
+.caroussel__vignette {
+  position: relative;
+}
+
+.caroussel__vignette .vignette__fleche__gauche {
+  z-index: 10;
+  opacity: .5;
+  border: none;
+  padding: 0;
+  position: absolute;
+  top: 40%;
+  left: 2px;
+}
+
+.caroussel__vignette .vignette__fleche__droite {
+  z-index: 10;
+  opacity: .5;
+  border: none;
+  padding: 0;
+  position: absolute;
+  top: 40%;
+  right: 2px;
+}
+
+.caroussel__vignette img {
+  width: 20px;
+  opacity: 1;
 }
 
 body {
