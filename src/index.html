@@ -4,9 +4,76 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/styles.scss" />
-    <script defer href="./JS/app.js"></script>
+    <link rel="stylesheet" href="./styles/style.scss" /> <!--je mets un import de chaque feuille de scss dans style.scss(une feuille par block de html, il avait fait ça en cours)-->
+    <script defer href="./scripts/app.js"></script>
     <title>MANFRA</title>
   </head>
-  <body></body>
+  <body>
+      <!--header avec logo et loupe de recherche-->
+    <header class="header">
+      <div class="header__logo">MANFRA</div>
+      <div class="header__search">
+          <form action="">
+              <!--je vais le mettre enforme avec label tout ça...-->
+            <img
+            class="search__loupe"
+            src="./assets/loupe.png"
+            alt="loupe recherche"
+          />
+          </form>
+       
+      </div>  
+    </header>
+    <!--main pour regrouper toutes les sections qui s'enchainent-->
+    <main class="main">
+
+            <section class="aLaUne">
+                <div class="aLaUne__visual">
+                    <p>A la Une</p>
+                    <!--Il y aura surement du contenu image ou video à intégrer ici--> <div class="aLaUne__picture">1</div>
+                </div>
+            </section>
+            <!--les 3 sections qui s'enchainent ont la même structure seul le texte ou le contenu image ou vidéo va différer donc je leur ai mis les mêmes noms (seule la classe de l'élément "section" differe au cas où on aurait besoin d'en cibler un)
+            Il faut réfléchir aussi au display media que l'on intègre peut etre sur la photo ou bouton visualiser????-->
+            <section class="lesPopulaires">
+                <div class="section__title">Les plus populaires</div>
+                <div class="section__caroussel">
+                    <!--ce sera une image à mettre dans chaque div, pour le moment j'ai mis juste du texte pour faire des tests-->
+                    <div class="caroussel__picture">1 pour test</div>
+                    <div class="caroussel__picture">2 pour test</div>
+                    <div class="caroussel__picture">3 pour test</div>
+                    <div class="caroussel__picture">4 pour test</div>
+                </div>
+            </section>
+            <section class="visuEnCours">
+                <div class="section__title">Visualisations en cours</div>
+                <div class="section__caroussel">
+                    
+                    <div class="caroussel__picture">1</div>
+                    <div class="caroussel__picture">2</div>
+                    <div class="caroussel__picture">3</div>
+                    <div class="caroussel__picture">4</div>
+                </div>
+            </section>
+            <section class="vosFavoris">
+                <div class="section__title">Selon vos favoris</div>
+                <div class="section__caroussel">
+                    
+                    <div class="caroussel__picture">1</div>
+                    <div class="caroussel__picture">2</div>
+                    <div class="caroussel__picture">3</div>
+                    <div class="caroussel__picture">4</div>
+            </section>
+            <!--nav en position fixe en bas-->
+      <nav class="navBottom">
+          <!--svg à mettre dans les div, j'ai mis 1... pour les tests-->
+          <div class="navBottom__home">1</div>
+          <div class="navBottom__addproject">2</div>
+          <div class="navBottom__feed">3</div>
+          <div class="navBottom__chat">4</div>
+          <div class="navBottom__profil">5</div>
+      </nav>
+    </main>
+    <footer class="footer">footer</footer>
+  </body>
 </html>
