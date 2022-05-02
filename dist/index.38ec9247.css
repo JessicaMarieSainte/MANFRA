@@ -38,8 +38,33 @@ table {
   height: 40px;
 }
 
+.caroussel {
+  flex-direction: column;
+  display: flex;
+}
+
+.caroussel .caroussel__title {
+  padding: 1.25rem 0 1rem .5rem;
+  font-size: 1rem;
+}
+
+.caroussel .caroussel__vignette {
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 3px;
+  display: flex;
+  overflow: hidden;
+}
+
+.caroussel .caroussel__vignette img {
+  min-width: 100px;
+  border-radius: 5px;
+}
+
 body {
+  color: #fff;
   height: 100vh;
+  background-image: linear-gradient(125deg, #151728 0%, #191b2e 9%, #1b1d31 18%, #1f2237 27%, #23263e 36%, #252841 45%, #292c47 55%, #2b2e4a 64%, #2f3251 73%, #333757 82%, #35395a 91%, #393d60 100%);
 }
 
 /*# sourceMappingURL=index.38ec9247.css.map */

@@ -2,6 +2,24 @@
 
 @import url(./header.scss);
 
+@import url(./sectionCaroussel.scss);
+
 body {
+  color: white;
   height: 100vh;
+  background-image: linear-gradient(
+    125deg,
+    hsl(234deg 30% 12%) 0%,
+    hsl(234deg 29% 14%) 9%,
+    hsl(234deg 29% 15%) 18%,
+    hsl(234deg 28% 17%) 27%,
+    hsl(234deg 28% 19%) 36%,
+    hsl(234deg 27% 20%) 45%,
+    hsl(234deg 27% 22%) 55%,
+    hsl(234deg 27% 23%) 64%,
+    hsl(234deg 27% 25%) 73%,
+    hsl(234deg 26% 27%) 82%,
+    hsl(234deg 26% 28%) 91%,
+    hsl(234deg 26% 30%) 100%
+  );
 }

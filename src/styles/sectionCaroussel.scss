@@ -1,0 +1,21 @@
+.caroussel {
+  display: flex;
+  flex-direction: column;
+
+  .caroussel__title {
+    font-size: 1rem;
+    padding: 1.25rem 0 1rem 0.5rem;
+  }
+  .caroussel__vignette {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 3px;
+    overflow: hidden;
+
+    img {
+      min-width: 100px;
+      border-radius: 5px;
+    }
+  }
+}
