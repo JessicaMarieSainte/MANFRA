@@ -44,7 +44,7 @@ table {
 }
 
 .caroussel .caroussel__title {
-  padding: 1.25rem 0 1rem .5rem;
+  padding: 1.25rem 0 1rem 3px;
   font-size: 1rem;
 }
 
@@ -56,9 +56,23 @@ table {
   overflow: hidden;
 }
 
-.caroussel .caroussel__vignette img {
+.caroussel .caroussel__vignette img.caroussel__picture__img {
   min-width: 100px;
   border-radius: 5px;
+}
+
+.caroussel__picture {
+  position: relative;
+}
+
+.caroussel__picture__add {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.caroussel__picture__add img {
+  width: 30px;
 }
 
 body {

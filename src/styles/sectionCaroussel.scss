@@ -4,7 +4,7 @@
 
   .caroussel__title {
     font-size: 1rem;
-    padding: 1.25rem 0 1rem 0.5rem;
+    padding: 1.25rem 0 1rem 3px;
   }
   .caroussel__vignette {
     display: flex;
@@ -13,9 +13,21 @@
     gap: 3px;
     overflow: hidden;
 
-    img {
+    img.caroussel__picture__img {
       min-width: 100px;
       border-radius: 5px;
     }
+  }
+}
+.caroussel__picture {
+  position: relative;
+}
+.caroussel__picture__add {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  img {
+    width: 30px;
   }
 }
