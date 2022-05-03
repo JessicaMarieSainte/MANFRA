@@ -33,9 +33,98 @@ table {
   border-spacing: 0;
 }
 
-.search__loupe {
+.header {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  display: flex;
+}
+
+.logo__picture img {
+  min-width: 40px;
+  height: 40px;
+}
+
+.profil__picture img {
   width: 40px;
   height: 40px;
+  border-radius: 100%;
+  margin-left: 3vw;
+}
+
+.header__nav {
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.header__nav .nav__loupe {
+  width: 30px;
+  height: 30px;
+  margin: auto;
+}
+
+.header__nav .nav__burger span {
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 40px;
+  position: relative;
+}
+
+nav {
+  color: #fff;
+  padding: 15px;
+  display: none;
+  position: absolute;
+}
+
+.nav__menuDeroulant {
+  list-style: none;
+  display: flex;
+  position: relative;
+}
+
+.nav__menuDeroulant > ul {
+  display: flex;
+}
+
+.nav__menuDeroulant li {
+  margin-right: 30px;
+}
+
+a.menuDeroulant__link {
+  color: #000;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all .4s ease-in-out;
+}
+
+.nav__menuDeroulant.active {
+  width: 100%;
+  display: block;
+  transform: translateX(0);
+}
+
+a.menuDeroulant__link.active {
+  padding: 10px 60px;
+  transform: translateX(0);
+}
+
+a.menuDeroulant__link.active:hover {
+  padding: 10px 80px;
+}
+
+nav.active {
+  z-index: 10;
+  background-color: #1b1d31;
+  display: block;
+  top: 60px;
+  right: 0;
 }
 
 .caroussel {
@@ -61,7 +150,7 @@ table {
   border-radius: 8px;
 }
 
-.caroussel__picture {
+.caroussel1__picture, .caroussel2__picture, .caroussel3__picture {
   position: relative;
 }
 

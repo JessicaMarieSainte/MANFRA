@@ -1,3 +1,5 @@
+//javascript des 3 caroussels
+
 var btnGauche = document.querySelectorAll(".vignette__fleche__gauche img");
 var btnDroite = document.querySelectorAll(".vignette__fleche__droite img");
 var imgs1 = document.querySelectorAll(".caroussel1__picture");
@@ -67,3 +69,15 @@ for (let i = 0; i < btnGauche.length; i++) {
     }
   });
 }
+
+// javascript du buger menu
+const burger = document.querySelector(".nav__burger");
+const nav = document.querySelector("nav");
+const navLinks = document.querySelector(".nav__menuDeroulant");
+const navLink = document.querySelectorAll(".menuDeroulant__link");
+
+burger.addEventListener("click", () => {
+  nav.classList.toggle("active");
+  navLinks.classList.toggle("active");
+  navLink.forEach((a) => a.classList.toggle("active"));
+});
