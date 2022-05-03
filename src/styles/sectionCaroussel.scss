@@ -17,6 +17,10 @@
       width: 100px;
       border-radius: 8px;
     }
+    img.caroussel__picture__img1 {
+      width: 100px;
+      border-radius: 8px;
+    }
   }
 }
 .caroussel__picture {
@@ -34,6 +38,7 @@
 }
 .caroussel__vignette {
   position: relative;
+  cursor: pointer;
   .vignette__fleche__gauche {
     position: absolute;
     z-index: 10;
@@ -42,6 +47,7 @@
     top: 40%;
     border: none;
     padding: 0;
+    cursor: pointer;
   }
   .vignette__fleche__droite {
     position: absolute;
@@ -51,6 +57,7 @@
     top: 40%;
     border: none;
     padding: 0;
+    cursor: pointer;
   }
 
   img {

@@ -56,7 +56,7 @@ table {
   overflow: hidden;
 }
 
-.caroussel .caroussel__vignette img.caroussel__picture__img {
+.caroussel .caroussel__vignette img.caroussel__picture__img, .caroussel .caroussel__vignette img.caroussel__picture__img1 {
   width: 100px;
   border-radius: 8px;
 }
@@ -77,12 +77,14 @@ table {
 }
 
 .caroussel__vignette {
+  cursor: pointer;
   position: relative;
 }
 
 .caroussel__vignette .vignette__fleche__gauche {
   z-index: 10;
   opacity: .5;
+  cursor: pointer;
   border: none;
   padding: 0;
   position: absolute;
@@ -93,6 +95,7 @@ table {
 .caroussel__vignette .vignette__fleche__droite {
   z-index: 10;
   opacity: .5;
+  cursor: pointer;
   border: none;
   padding: 0;
   position: absolute;

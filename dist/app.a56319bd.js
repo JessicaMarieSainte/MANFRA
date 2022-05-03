@@ -526,6 +526,29 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"bAabt":[function(require,module,exports) {
+var btnGauche = document.querySelector(".vignette__fleche__gauche");
+var btnDroite = document.querySelector(".vignette__fleche__droite");
+var imgs = document.querySelectorAll(".caroussel__picture__img");
+var imgIndex = 0;
+var imgWidth = 400;
+btnGauche.addEventListener("click", function() {
+    if (imgIndex > 0) {
+        imgIndex -= 1;
+        imgs[0].style.marginLeft = -1 * imgWidth * imgIndex + "px";
+    } else {
+        imgIndex = imgs.length - 1;
+        imgs[0].style.marginLeft = -1 * imgWidth * imgIndex + "px";
+    }
+});
+btnDroite.addEventListener("click", function() {
+    if (imgIndex < imgs.length - 1) {
+        imgIndex += 1;
+        imgs[0].style.marginLeft = -1 * imgWidth * imgIndex + "px";
+    } else {
+        imgIndex = 0;
+        imgs[0].style.marginLeft = -1 * imgWidth * imgIndex + "px";
+    }
+});
 
 },{}]},["7Nluk","bAabt"], "bAabt", "parcelRequirecfc4")
 
