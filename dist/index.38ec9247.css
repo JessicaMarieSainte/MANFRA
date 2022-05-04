@@ -37,18 +37,18 @@ table {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 5px;
+  padding: .313rem;
   display: flex;
 }
 
 .logo__picture img {
-  min-width: 40px;
-  height: 40px;
+  min-width: 2.5rem;
+  height: 2.5rem;
 }
 
 .profil__picture img {
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 100%;
   margin-left: 3vw;
 }
@@ -56,31 +56,33 @@ table {
 .header__nav {
   justify-content: center;
   align-items: flex-end;
-  margin-bottom: 10px;
+  margin-bottom: .625rem;
   display: flex;
 }
 
 .header__nav .nav__loupe {
-  width: 30px;
-  height: 30px;
-  margin: auto;
+  width: 1.875rem;
+  height: 1.875rem;
+  color: #fff;
 }
 
 .header__nav .nav__burger span {
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   color: #fff;
   text-align: center;
-  margin-bottom: 10px;
-  font-size: 40px;
+  margin-bottom: .675rem;
+  font-size: 2.5rem;
   position: relative;
 }
 
 nav {
-  color: #fff;
-  padding: 15px;
+  padding: .938rem 0;
+  transition: all 30s ease-in-out;
   display: none;
   position: absolute;
+  top: 0;
+  bottom: 100%;
 }
 
 .nav__menuDeroulant {
@@ -94,37 +96,39 @@ nav {
 }
 
 .nav__menuDeroulant li {
-  margin-right: 30px;
+  margin-right: .938rem;
+  padding: .313rem;
 }
 
 a.menuDeroulant__link {
-  color: #000;
-  font-size: 14px;
+  color: #fff;
+  font-size: .938rem;
   text-decoration: none;
-  transition: all .4s ease-in-out;
 }
 
 .nav__menuDeroulant.active {
-  width: 100%;
   display: block;
-  transform: translateX(0);
 }
 
 a.menuDeroulant__link.active {
-  padding: 10px 60px;
-  transform: translateX(0);
+  padding: .675rem 1.25rem;
 }
 
-a.menuDeroulant__link.active:hover {
-  padding: 10px 80px;
+a.menuDeroulant__link:hover {
+  background-color: #000;
+  padding: .675rem 5rem;
+  font-size: medium;
 }
 
 nav.active {
-  z-index: 10;
+  width: 100%;
+  z-index: 100;
   background-color: #1b1d31;
   display: block;
-  top: 60px;
-  right: 0;
+  top: 9vh;
+  bottom: 60vh;
+  left: 0;
+  transform: translateX(0);
 }
 
 .caroussel {
