@@ -1,8 +1,14 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Oswald:wght@300&family=Poppins&display=swap%22);
+
+//font-family: "Poppins", sans-serif;
+
 @import url(./reset.scss);
 
 @import url(./header.scss);
 
 @import url(./sectionCaroussel.scss);
+
+@import url(./alaune.scss);
 
 body {
   color: white;
@@ -22,4 +28,39 @@ body {
     hsl(234deg 26% 28%) 91%,
     hsl(234deg 26% 30%) 100%
   );
+  font-family: "poppins", sans-serif;
+}
+
+@media screen and (min-width: 830px) {
+  .header {
+    padding: 1.5vh 2vw;
+  }
+  .nav__burger span {
+    display: none;
+  }
+  .header__nav {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+  .header__profil {
+    order: 3;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    position: inherit;
+    padding: 0;
+  }
+  .menuDeroulant__link:hover {
+    padding: 0;
+    background-color: black;
+    margin: 0;
+    font-size: unset;
+  }
+  .slider {
+    height: 100vh;
+  }
 }

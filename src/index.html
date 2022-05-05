@@ -15,6 +15,7 @@
         <figure class="logo__picture">
           <img src="./assets/Gomu_logo.png" alt="logo MANFRA" />
         </figure>
+        <p>MANFRA</p>
       </div>
      <div class="header__profil">
           <figure class="profil__picture">
@@ -55,24 +56,46 @@
     </header>
     <!--main pour regrouper toutes les sections qui s'enchainent-->
     <main class="main">
+
       <section class="aLaUne">
-        <div class="aLaUne__visual">
-          <p>A la Une</p>
-          <!--Il y aura surement du contenu image ou video à intégrer ici-->
-          <div class="aLaUne__picture">1</div>
+        <div class="slider">
+          <span class="vignette__fleche__gauche">
+            <img class="fleche__gauche" src="./assets/fleche-fine-contour-vers-la-gauche.png" alt="slide à gauche">
+        </span>
+        <span class="vignette__fleche__droite">
+            <img class="fleche__droite" src="./assets/fleche-droite.png" alt="slide à gauche">
+        </span>
+          <div class="slides">
+            <div class="slide">
+              <img class="taille-slide" src="./assets/alaune 1.jpg" alt="slide 1">
+              <p class="slide__description">Nouveaux scans
+              </p>
+            </div>
+            <div class="slide">
+              <img class="taille-slide" src="./assets/alaune 2.jpg" alt="slide 2">
+              <p class="slide__description">Nouveaux animés</p>
+            </div>
+            <div class="slide">
+              <img class="taille-slide" src="./assets/alaune 3.jpg" alt="slide 3">
+              <p class="slide__description">Regarder les nouveaux épisodes</p>
+            </div>
+            <div class="slide">
+               <img class="taille-slide" src="./assets/equipeMANFRA.webp" alt="slide 4">
+               <p class="slide__description">Retour en image sur MANFRA-PLAY</p>
+            </div>
+          </div>
         </div>
       </section>
-      <!--les 3 sections qui s'enchainent ont la même structure seul le texte ou le contenu image ou vidéo va différer donc je leur ai mis les mêmes noms (seule la classe de l'élément "section" differe au cas où on aurait besoin d'en cibler un)
-            Il faut réfléchir aussi au display media que l'on intègre peut etre sur la photo ou bouton visualiser????-->
+      
       <section class="caroussel">
         <div class="caroussel__title">Les plus populaires</div>
         <div class="caroussel__vignette">
-          <button class="vignette__fleche__gauche">
-            <img src="./assets/fleche-fine-contour-vers-la-gauche.png" alt="slide à gauche">
-        </button>
-        <button class="vignette__fleche__droite">
-            <img src="./assets/fleche-droite.png" alt="slide à gauche">
-        </button>
+          <span class="vignette__fleche__gauche">
+            <img class="fleche__gauche" src="./assets/fleche-fine-contour-vers-la-gauche.png" alt="slide à gauche">
+        </span>
+        <span class="vignette__fleche__droite">
+            <img class="fleche__droite" src="./assets/fleche-droite.png" alt="slide à gauche">
+        </span>
           <span class="caroussel1__picture">
             <img
               src="./assets/téléchargement.jpeg"
@@ -144,15 +167,15 @@
       <section class="caroussel">
         <div class="caroussel__title">Visualisations en cours</div>
         <div class="caroussel__vignette">
-            <button class="vignette__fleche__gauche">
-                <img src="./assets/fleche-fine-contour-vers-la-gauche.png" alt="slide à gauche">
-            </button>
-            <button class="vignette__fleche__droite">
-                <img src="./assets/fleche-droite.png" alt="slide à gauche">
-            </button>
+            <span class="vignette__fleche__gauche">
+                <img class="fleche__gauche" src="./assets/fleche-fine-contour-vers-la-gauche.png" alt="slide à gauche">
+            </span>
+            <span class="vignette__fleche__droite">
+                <img class="fleche__droite" src="./assets/fleche-droite.png" alt="slide à gauche">
+            </span>
           <span class="caroussel2__picture">
             <img
-              src="./assets/téléchargement.jpeg"
+              src="./assets/arton19821.jpeg"
               alt="Dofus"
               class="caroussel__picture__img"
             />
@@ -162,7 +185,7 @@
           </span>
           <span class="caroussel2__picture"
             ><img
-              src="./assets/téléchargement.jpeg"
+              src="./assets/colorless-tome-1.jpeg"
               alt="Dofus"
               class="caroussel__picture__img" />
             <a class="caroussel__picture__add" href="#">
@@ -170,7 +193,7 @@
           ></span>
           <span class="caroussel2__picture"
             ><img
-              src="./assets/téléchargement.jpeg"
+              src="./assets/Dreamland.jpeg"
               alt="Dofus"
               class="caroussel__picture__img" />
             <a class="caroussel__picture__add" href="#">
@@ -178,7 +201,7 @@
           ></span>
           <span class="caroussel2__picture"
             ><img
-              src="./assets/téléchargement.jpeg"
+              src="./assets/grand-blue-tome-1-fr.jpeg"
               alt="Dofus"
               class="caroussel__picture__img" />
             <a class="caroussel__picture__add" href="#">
@@ -186,7 +209,7 @@
           ></span>
           <span class="caroussel2__picture"
             ><img
-              src="./assets/téléchargement.jpeg"
+              src="./assets/horion-1-glenat.jpeg"
               alt="Dofus"
               class="caroussel__picture__img" />
             <a class="caroussel__picture__add" href="#">
@@ -194,7 +217,7 @@
           ></span>
           <span class="caroussel2__picture">
             <img
-              src="./assets/téléchargement.jpeg"
+              src="./assets/radiant.jpeg"
               alt="Dofus"
               class="caroussel__picture__img" />
             <a class="caroussel__picture__add" href="#">
@@ -202,7 +225,7 @@
           ></span>
           <span class="caroussel2__picture"
             ><img
-              src="./assets/téléchargement.jpeg"
+              src="./assets/ragnafall-1-kurotsume.jpeg"
               alt="Dofus"
               class="caroussel__picture__img" />
             <a class="caroussel__picture__add" href="#">
@@ -222,12 +245,12 @@
         
         <div class="caroussel__title">Selon mes favoris</div>
         <div class="caroussel__vignette">
-            <button class="vignette__fleche__gauche">
-                <img src="./assets/fleche-fine-contour-vers-la-gauche.png" alt="slide à gauche">
-            </button>
-            <button class="vignette__fleche__droite">
-                <img src="./assets/fleche-droite.png" alt="slide à gauche">
-            </button>
+            <span class="vignette__fleche__gauche">
+                <img class="fleche__gauche" src="./assets/fleche-fine-contour-vers-la-gauche.png" alt="slide à gauche">
+            </span>
+            <span class="vignette__fleche__droite">
+                <img class="fleche__droite" src="./assets/fleche-droite.png" alt="slide à gauche">
+            </span>
         <span class="caroussel3__picture">
           <img
             src="./assets/téléchargement.jpeg"

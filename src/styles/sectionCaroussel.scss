@@ -4,21 +4,22 @@
 
   .caroussel__title {
     font-size: 1rem;
-    padding: 1rem 0 3px 3px;
+    padding: 2vh 0 1.3vh 2vh;
   }
   .caroussel__vignette {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    gap: 3px;
+    gap: 0.188rem;
     overflow: hidden;
+    height: 5%;
 
     img.caroussel__picture__img {
-      width: 100px;
+      //width: 100%;
       border-radius: 8px;
     }
     img.caroussel__picture__img1 {
-      width: 100px;
+      width: 100%;
       border-radius: 8px;
     }
   }
@@ -30,8 +31,8 @@
 }
 .caroussel__picture__add {
   position: absolute;
-  top: 3px;
-  right: 3px;
+  top: 0.188rem;
+  right: 0.188rem;
   transform: translate(50% 50%);
 
   img {
@@ -50,6 +51,7 @@
     border: none;
     padding: 0;
     cursor: pointer;
+    width: 20px;
   }
   .vignette__fleche__droite {
     position: absolute;
@@ -60,10 +62,14 @@
     border: none;
     padding: 0;
     cursor: pointer;
-  }
-
-  img {
     width: 20px;
-    opacity: 1;
   }
+  .fleche__droite,
+  .fleche__gauche {
+    width: 3vh;
+  }
+}
+img.caroussel__picture__img {
+  width: 25vw;
+  height: 100%;
 }

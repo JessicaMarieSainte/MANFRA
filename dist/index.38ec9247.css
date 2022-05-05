@@ -1,3 +1,4 @@
+@import "https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Oswald:wght@300&family=Poppins&display=swap%22";
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   font-size: 100%;
   font: inherit;
@@ -37,7 +38,14 @@ table {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: .313rem;
+  padding: .5vh 1.5vh;
+  display: flex;
+}
+
+.header .header__logo {
+  align-items: center;
+  gap: .8vw;
+  font-size: large;
   display: flex;
 }
 
@@ -107,6 +115,7 @@ a.menuDeroulant__link {
 }
 
 .nav__menuDeroulant.active {
+  cursor: pointer;
   display: block;
 }
 
@@ -114,7 +123,7 @@ a.menuDeroulant__link.active {
   padding: .675rem 1.25rem;
 }
 
-a.menuDeroulant__link:hover {
+.menuDeroulant__link:hover {
   background-color: #000;
   padding: .675rem 5rem;
   font-size: medium;
@@ -137,20 +146,25 @@ nav.active {
 }
 
 .caroussel .caroussel__title {
-  padding: 1rem 0 3px 3px;
+  padding: 2vh 0 1.3vh 2vh;
   font-size: 1rem;
 }
 
 .caroussel .caroussel__vignette {
+  height: 5%;
   flex-direction: row;
   justify-content: flex-start;
-  gap: 3px;
+  gap: .188rem;
   display: flex;
   overflow: hidden;
 }
 
-.caroussel .caroussel__vignette img.caroussel__picture__img, .caroussel .caroussel__vignette img.caroussel__picture__img1 {
-  width: 100px;
+.caroussel .caroussel__vignette img.caroussel__picture__img {
+  border-radius: 8px;
+}
+
+.caroussel .caroussel__vignette img.caroussel__picture__img1 {
+  width: 100%;
   border-radius: 8px;
 }
 
@@ -161,8 +175,8 @@ nav.active {
 .caroussel__picture__add {
   transform: translate(50% 50%);
   position: absolute;
-  top: 3px;
-  right: 3px;
+  top: .188rem;
+  right: .188rem;
 }
 
 .caroussel__picture__add img {
@@ -178,6 +192,7 @@ nav.active {
   z-index: 10;
   opacity: .5;
   cursor: pointer;
+  width: 20px;
   border: none;
   padding: 0;
   position: absolute;
@@ -189,6 +204,7 @@ nav.active {
   z-index: 10;
   opacity: .5;
   cursor: pointer;
+  width: 20px;
   border: none;
   padding: 0;
   position: absolute;
@@ -196,15 +212,145 @@ nav.active {
   right: 2px;
 }
 
-.caroussel__vignette img {
+.caroussel__vignette .fleche__droite, .caroussel__vignette .fleche__gauche {
+  width: 3vh;
+}
+
+img.caroussel__picture__img {
+  width: 25vw;
+  height: 100%;
+}
+
+.slider {
+  width: 100vw;
+  display: contents;
+  position: relative;
+  overflow: hidden;
+}
+
+.slides {
+  width: 400vw;
+  padding-top: 5vh;
+  animation: glisse 30s 2;
+  display: flex;
+}
+
+.slide {
+  width: 100vw;
+  flex-direction: column;
+  display: flex;
+}
+
+.slide .taille-slide {
+  width: 90vw;
+  height: 100%;
+  z-index: 1000;
+  filter: drop-shadow(10px 10px 6px #000);
+  margin: auto;
+}
+
+.slide .slide__description {
+  text-shadow: 1.5vh 1vh 1.5vh #000;
+  margin: auto;
+  padding: 2.5vh 0 5vh;
+  font-family: poppins, sans-serif;
+}
+
+.vignette__fleche__gauche {
+  z-index: 10;
+  opacity: .5;
+  cursor: pointer;
   width: 20px;
-  opacity: 1;
+  border: none;
+  padding: 0;
+  position: absolute;
+  top: 40%;
+  left: 2px;
+}
+
+.vignette__fleche__droite {
+  z-index: 10;
+  opacity: .5;
+  cursor: pointer;
+  width: 20px;
+  border: none;
+  padding: 0;
+  position: absolute;
+  top: 40%;
+  right: 2px;
+}
+
+.fleche__droite, .fleche__gauche {
+  width: 3vh;
+}
+
+@keyframes glisse {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-100vw);
+  }
+
+  50% {
+    transform: translateX(-200vw);
+  }
+
+  75% {
+    transform: translateX(-300vw);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
 
 body {
   color: #fff;
   height: 100vh;
   background-image: linear-gradient(125deg, #151728 0%, #191b2e 9%, #1b1d31 18%, #1f2237 27%, #23263e 36%, #252841 45%, #292c47 55%, #2b2e4a 64%, #2f3251 73%, #333757 82%, #35395a 91%, #393d60 100%);
+  font-family: poppins, sans-serif;
+}
+
+@media screen and (min-width: 830px) {
+  .header {
+    padding: 1.5vh 2vw;
+  }
+
+  .nav__burger span {
+    display: none;
+  }
+
+  .header__nav {
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    display: flex;
+  }
+
+  .header__profil {
+    order: 3;
+  }
+
+  nav {
+    position: inherit;
+    flex-direction: row;
+    padding: 0;
+    display: flex;
+  }
+
+  .menuDeroulant__link:hover {
+    font-size: unset;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+  }
+
+  .slider {
+    height: 100vh;
+  }
 }
 
 /*# sourceMappingURL=index.38ec9247.css.map */
