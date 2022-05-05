@@ -10,6 +10,8 @@
 
 @import url(./alaune.scss);
 
+@import url(./footer.scss);
+
 body {
   color: white;
   height: 100vh;
@@ -29,6 +31,9 @@ body {
     hsl(234deg 26% 30%) 100%
   );
   font-family: "poppins", sans-serif;
+  background-position: cover;
+  background-attachment: fixed;
+  font-size: 3rem;
 }
 
 @media screen and (min-width: 830px) {
@@ -54,13 +59,24 @@ body {
     position: inherit;
     padding: 0;
   }
+  .nav__menuDeroulant {
+    margin-bottom: 1.5rem;
+  }
   .menuDeroulant__link:hover {
     padding: 0;
     background-color: black;
     margin: 0;
-    font-size: unset;
   }
   .slider {
     height: 100vh;
+  }
+  .slides {
+    height: 70vh;
+  }
+  .aLaUne {
+    height: 90vh;
+  }
+  .slide .slide__description {
+    font-size: 2.5rem;
   }
 }

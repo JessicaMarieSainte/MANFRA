@@ -94,15 +94,32 @@ burger.addEventListener("click", ()=>{
     navLinks.classList.toggle("active");
     navLink.forEach((a)=>a.classList.toggle("active")
     );
-}); //javascript du slide A la une
- // var srcSlide = document.querySelectorAll(".taille-slide");
- // var Slide = document.querySelectorAll(".slide");
- // function backgroundBlur() {
- //   for (let i = 0; i < srcSlide.length; i++) {
- //     console.log("je change");
- //     Slide[i].style.backgroundImage = "srcSlide[i].src";
- //   }
- // }
- // backgroundBlur();
+});
+//js du fetch "les plus populaires"
+var imgsScore = document.querySelectorAll(".caroussel1__picture img.caroussel__picture__img");
+let mangaPopular = function() {
+    fetch("https://api.jikan.moe/v4/manga?limit=8&order_by=score&sort=desc").then(function(response) {
+        return response.json();
+    }).then(function(manga) {
+        for(let i = 0; i < imgsScore.length; i++){
+            imgsScore[i].src = "";
+            imgsScore[i].src = manga.data[i].images.webp.image_url;
+        }
+    });
+};
+mangaPopular();
+//js du fetch pour les mangas recommandés
+var imgsRecommendation = document.querySelectorAll(".caroussel3__picture img.caroussel__picture__img");
+let mangaRecommendation = function() {
+    fetch("https://api.jikan.moe/v4/recommendations/manga?&limit=8").then(function(response) {
+        return response.json();
+    }).then(function(manga) {
+        for(let i = 0; i < imgsScore.length; i++){
+            imgsRecommendation[i].src = "";
+            imgsRecommendation[i].src = manga.data[i].entry[0].images.webp.image_url;
+        }
+    });
+};
+mangaRecommendation();
 
 //# sourceMappingURL=index.c719088e.js.map

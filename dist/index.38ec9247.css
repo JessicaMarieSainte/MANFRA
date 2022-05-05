@@ -43,6 +43,7 @@ table {
 }
 
 .header .header__logo {
+  cursor: pointer;
   align-items: center;
   gap: .8vw;
   font-size: large;
@@ -52,11 +53,13 @@ table {
 .logo__picture img {
   min-width: 2.5rem;
   height: 2.5rem;
+  cursor: pointer;
 }
 
 .profil__picture img {
   width: 2.5rem;
   height: 2.5rem;
+  cursor: pointer;
   border-radius: 100%;
   margin-left: 3vw;
 }
@@ -72,6 +75,7 @@ table {
   width: 1.875rem;
   height: 1.875rem;
   color: #fff;
+  cursor: pointer;
 }
 
 .header__nav .nav__burger span {
@@ -79,6 +83,7 @@ table {
   height: 2.5rem;
   color: #fff;
   text-align: center;
+  cursor: pointer;
   margin-bottom: .675rem;
   font-size: 2.5rem;
   position: relative;
@@ -131,7 +136,8 @@ a.menuDeroulant__link.active {
 
 nav.active {
   width: 100%;
-  z-index: 100;
+  height: fit-content;
+  z-index: 9000;
   background-color: #1b1d31;
   display: block;
   top: 9vh;
@@ -169,6 +175,7 @@ nav.active {
 }
 
 .caroussel1__picture, .caroussel2__picture, .caroussel3__picture {
+  transition: all .4s;
   position: relative;
 }
 
@@ -238,6 +245,7 @@ img.caroussel__picture__img {
 .slide {
   width: 100vw;
   flex-direction: column;
+  transition: all .5s;
   display: flex;
 }
 
@@ -251,9 +259,11 @@ img.caroussel__picture__img {
 
 .slide .slide__description {
   text-shadow: 1.5vh 1vh 1.5vh #000;
+  text-align: center;
   margin: auto;
   padding: 2.5vh 0 5vh;
   font-family: poppins, sans-serif;
+  font-size: 1.2rem;
 }
 
 .vignette__fleche__gauche {
@@ -306,11 +316,30 @@ img.caroussel__picture__img {
   }
 }
 
+.footer {
+  padding: 2rem;
+  font-size: .7rem;
+  font-style: italic;
+}
+
+.footer ul {
+  flex-wrap: wrap;
+  list-style: none;
+  display: flex;
+}
+
+.footer .footer__link {
+  padding: 1rem;
+}
+
 body {
   color: #fff;
   height: 100vh;
   background-image: linear-gradient(125deg, #151728 0%, #191b2e 9%, #1b1d31 18%, #1f2237 27%, #23263e 36%, #252841 45%, #292c47 55%, #2b2e4a 64%, #2f3251 73%, #333757 82%, #35395a 91%, #393d60 100%);
+  background-position: cover;
+  background-attachment: fixed;
   font-family: poppins, sans-serif;
+  font-size: 3rem;
 }
 
 @media screen and (min-width: 830px) {
@@ -341,8 +370,11 @@ body {
     display: flex;
   }
 
+  .nav__menuDeroulant {
+    margin-bottom: 1.5rem;
+  }
+
   .menuDeroulant__link:hover {
-    font-size: unset;
     background-color: #000;
     margin: 0;
     padding: 0;
@@ -350,6 +382,18 @@ body {
 
   .slider {
     height: 100vh;
+  }
+
+  .slides {
+    height: 70vh;
+  }
+
+  .aLaUne {
+    height: 90vh;
+  }
+
+  .slide .slide__description {
+    font-size: 2.5rem;
   }
 }
 

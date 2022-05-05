@@ -1,0 +1,13 @@
+.footer {
+  font-size: 0.7rem;
+  padding: 2rem;
+  font-style: italic;
+  ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer__link {
+    padding: 1rem;
+  }
+}
