@@ -146,3 +146,5 @@ let mangaRecommendation = function () {
 };
 
 mangaRecommendation();
+
+//js de la page search

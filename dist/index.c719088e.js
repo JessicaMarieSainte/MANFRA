@@ -120,6 +120,6 @@ let mangaRecommendation = function() {
         }
     });
 };
-mangaRecommendation();
+mangaRecommendation(); //js de la page search
 
 //# sourceMappingURL=index.c719088e.js.map

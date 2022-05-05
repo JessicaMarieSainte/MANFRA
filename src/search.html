@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.scss" />
+    <title>Document</title>
+  </head>
+  <header class="header">
+    <div class="header__logo">
+      <figure class="logo__picture">
+        <img src="./assets/assets_homePage/Gomu_logo.png" alt="logo MANFRA" />
+      </figure>
+      <p>MANFRA</p>
+    </div>
+    <div class="header__profil">
+      <figure class="profil__picture">
+        <img
+          src="./assets/assets_homePage/photo_profil.jpeg"
+          alt="photo de profil"
+        />
+      </figure>
+    </div>
+    <div class="header__nav">
+      <a href="./index.html">
+        <img
+          class="nav__loupe"
+          src="./assets/assets_searchPage/assets/Home.svg"
+          alt="retour a l'accueil"
+        />
+      </a>
+
+      <div class="nav__burger">
+        <span>☰</span>
+      </div>
+      <nav>
+        <ul class="nav__menuDeroulant">
+          <li>
+            <a href="#" class="menuDeroulant__link">Ma bibliothèque</a>
+          </li>
+          <li>
+            <a href="#" class="menuDeroulant__link">Ma communauté</a>
+          </li>
+          <li>
+            <a href="./search.html" class="menuDeroulant__link">Naviguer</a>
+          </li>
+          <li>
+            <a href="#" class="menuDeroulant__link">Event</a>
+          </li>
+          <li>
+            <a href="#" class="menuDeroulant__link">Mon profil</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <body class="search">
+    <div class="parent_search">
+      <form>
+        <label for="">
+          <img
+            class="img"
+            src="./assets/assets_searchPage/assets/icone-loupe-gris.png"
+            alt=""
+          />
+        </label>
+
+        <input size="100" type="text" />
+
+    </div>
+
+    <section class="tab-genre">
+      <button class="genre">
+        <p>Action</p>
+        <img
+          class="taille-icon"
+          src="./assets/assets_searchPage/photo/explosion.png"
+          alt="Action"
+        />
+      </button>
+      <button class="genre">
+        <p>Arts Martiaux</p>
+        <img
+          class="taille-icon"
+          src="./assets/assets_searchPage/photo/combat-de-couple-darts-martiaux.png"
+          alt="Combat"
+        />
+      </button>
+      <button class="genre">
+        <p>Aventure</p>
+        <img
+          class="taille-icon"
+          src="./assets/assets_searchPage/photo/aventure.png"
+          alt="Aventure"
+        />
+      </button>
+      <button class="genre">
+        <p>Comédie</p>
+        <img
+          class="taille-icon"
+          src="./assets/assets_searchPage/photo/la-comedie.png"
+          alt="Comédie"
+        />
+      </button>
+      <button class="genre">
+        <p>Detective</p>
+        <img
+          class="taille-icon"
+          src="./assets/assets_searchPage/photo/detective.png"
+          alt="Détective"
+        />
+      </button>
+      <button class="genre">
+        <p>Fantastique</p>
+        <img
+          class="taille-icon"
+          src="./assets/assets_searchPage/photo/sorcier.png"
+          alt="Fantastique"
+        />
+      </button>
+      <button class="genre">
+        <p>Horreur</p>
+        <img
+          class="taille-icon"
+          src="./assets/assets_searchPage/photo/serial-killer.png"
+          alt="Horreur"
+        />
+      </button>
+      <button class="genre">
+        <p>Jeunesse</p>
+        <img
+          class="taille-icon"
+          src="./assets/assets_searchPage/photo/casquette.png"
+          alt="Jeunesse"
+        />
+      </button>
+      <button class="genre">
+        <p>Mecha</p>
+        <img
+          class="taille-icon"
+          src="./assets/assets_searchPage/photo/bras-robotique.png"
+          alt="Mecha"
+        />
+      </button>
+      <button class="genre">
+        <p>Musique</p>
+        <img
+          class="taille-icon"
+          src="./assets/assets_searchPage/photo/la-musique.png"
+          alt="Musique"
+        />
+      </button>
+      <button class="genre">
+        <p>Romance</p>
+        <img
+          class="taille-icon"
+          src="./assets/assets_searchPage/photo/amour.png"
+          alt="Romance"
+        />
+      </button>
+      <button class="genre">
+        <p>Syfy</p>
+        <img
+          class="taille-icon"
+          src="./assets/assets_searchPage/photo/ovni.png"
+          alt="Science-Fiction"
+        />
+      </button>
+      <button class="genre">
+        <p>Shojo</p>
+        <img
+          class="taille-icon"
+          src="./assets/assets_searchPage/photo/secret.png"
+          alt="Shojo"
+        />
+      </button>
+      <button class="genre">
+        <p>Shonen</p>
+        <img
+          class="taille-icon"
+          src="./assets/assets_searchPage/photo/combat.png"
+          alt="Shonen"
+        />
+      </button>
+      <button class="genre">
+        <p>Sport</p>
+        <img
+          class="taille-icon"
+          src="./assets/assets_searchPage/photo/des-sports.png"
+          alt="Sport"
+        />
+      </button>
+      <button class="genre">
+        <p>Trhiller</p>
+        <img
+          class="taille-icon"
+          src="./assets/assets_searchPage/photo/thriller-en-francais.png"
+          alt="Thriller"
+        />
+      </button>
+    </section>
+
+    <div class="show"></div>
+    <div class="show_deux"></div>
+
+    <script>
+        $input = document.querySelector("input");
+      $form = document.querySelector("form");
+      let parent = document.querySelector(".parent");
+      let resp;
+      let card = document.querySelector(".card");
+      let pareent = document.querySelector("body");
+      let yoloo;
+      let yoo = 0;
+      let show = document.querySelector(".show");
+      let show_deux = document.querySelector(".show_deux");
+
+      $form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        /* show_deux.remove(); */
+        show.textContent = ""; 
+        show_deux.textContent = "";
+        fetch("https://api.jikan.moe/v4/manga?q=" + $input.value)
+          .then((response) => response.json())
+          .then((response) => {
+            console.log(response.data[10].title);
+            for (var i = 0; i < response.data.length; i++) {
+              console.log("----------------------------");
+              console.log(response.data[i].title);
+              console.log("----------------------------");
+
+              /*               yoo =
+                      '<div class="card">' +
+                      '<img class="card_img" src="./assets/téléchargement.jpeg" alt="" />' +
+                      '<div class="card_bottom">' +
+                      '<p class="white">' +
+                      response.data[i].title +
+                      "</p>" +
+                      '<span class="span">' +
+                      "<p>Manga</p>" +
+                      '<div class="tag">' +
+                      "</div>" +
+                      "<p>VOST</p>" +
+                      "</span>" +
+                      "</div>" +
+                      "</div>";
+                    yoloo = response;
+
+                    show.innerHTML = yoo;
+                    console.log(yoo);
+                    show.appendChild(yoo); */
+
+              /*               let white = document.querySelector(".white");
+                    white.textContent = response.data[i].title; */
+
+              let paarent = document.createElement("div");
+              let img = document.createElement("img");
+              let div = document.createElement("div");
+              let p = document.createElement("p");
+              let span = document.createElement("span");
+              let pdeux = document.createElement("p");
+              let divdeux = document.createElement("div");
+              let ptrois = document.createElement("p");
+
+
+              show_deux.appendChild(paarent);
+              paarent.appendChild(img);
+              paarent.appendChild(div);
+              div.appendChild(p);
+              div.appendChild(span);
+              span.appendChild(pdeux);
+              span.appendChild(divdeux);
+              span.appendChild(ptrois);
+
+              paarent.classList.add("card");
+
+              img.setAttribute("src", response.data[i].images.webp.image_url);
+              console.log(img);
+              div.classList.add("card_bottom");
+              p.classList.add("white");
+              span.classList.add("span");
+              divdeux.classList.add("tag");
+              p.textContent = response.data[i].title;
+              pdeux.textContent = "Manga";
+              ptrois.textContent = "VOST";
+            }
+            $input.value = "";
+          });
+
+        console.log("--------------");
+        let goo = document.querySelectorAll(".show .card");
+        console.log(goo);
+        goo.textContent = "";
+        console.log("-------------dsds---------");
+      });
+
+      $input.addEventListener("keypress", function () {
+        console.log($input.value);
+        setTimeout(function () {
+          fetch("https://api.jikan.moe/v4/manga?q=" + $input.value)
+            .then((response) => response.json())
+            .then((response) => {
+              parent.textContent = "";
+              console.log($input.value);
+              if (response.status != "429") {
+                console.log("test");
+                /*                 console.log(response.data[0]); */
+                resp = response;
+                console.log(response.data.length);
+              }
+              for (let i = 0; i < 5 /* resp.data.length */; i++) {
+                let p = document.createElement("p");
+                let div = document.createElement("div");
+                let diiv = document.createElement("div");
+                let anime = document.createElement("p");
+                parent.appendChild(div);
+
+                let img = document.createElement("img");
+                div.appendChild(img);
+                div.appendChild(diiv);
+                img.setAttribute(
+                  "src",
+                  resp.data[i].images.webp.small_image_url
+                );
+                diiv.appendChild(p);
+                diiv.appendChild(anime);
+                p.textContent = resp.data[i].title;
+
+                anime.textContent = "Anime";
+                p.classList.add("test");
+                img.classList.add("teest");
+                for (let a = 0; a < resp.data[i].genres.length; a++) {
+                  console.log(resp.data[i].genres[a]);
+                  console.log(resp.data[i].genres.length);
+                }
+              }
+            });
+        }, 1500);
+      });
+      let num = 0;
+      let tab = [1, 17, 2, 4, 39, 10, 14, 15, 18, 19, 22, 24, 25, 27, 30, 8];
+      $button = document.querySelectorAll("button");
+      $buttonp = document.querySelectorAll("button p");
+      for (let i = 0; i < $button.length; i++) {
+        $button[i].addEventListener("click", function () {
+          fetch("https://api.jikan.moe/v4/manga?genres=" + tab[i])
+            .then((response) => response.json())
+            .then((response) => {
+              show_deux.textContent = ""; show.textContent = ""; 
+              for (var a = 0; a < response.data.length; a++) {
+                let paarent = document.createElement("div");
+                let img = document.createElement("img");
+                let div = document.createElement("div");
+                let p = document.createElement("p");
+                let span = document.createElement("span");
+                let pdeux = document.createElement("p");
+                let divdeux = document.createElement("div");
+                let ptrois = document.createElement("p");
+
+                pareent.appendChild(show);
+                show.appendChild(paarent);
+                paarent.appendChild(img);
+                paarent.appendChild(div);
+                div.appendChild(p);
+                div.appendChild(span);
+                span.appendChild(pdeux);
+                span.appendChild(divdeux);
+                span.appendChild(ptrois);
+                paarent.classList.add("card");
+                img.setAttribute("src", response.data[a].images.webp.image_url);
+                div.classList.add("card_bottom");
+                p.classList.add("white");
+                span.classList.add("span");
+                divdeux.classList.add("tag");
+                p.textContent = response.data[i].title;
+                pdeux.textContent = "Manga";
+                ptrois.textContent = "VOST";
+
+              }
+            });
+          let go = document.querySelectorAll(".show_deux .card");
+          console.log(go);
+          go.textContent = "";
+        });
+      }
+    </script>
+  </body>
+</html>
