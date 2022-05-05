@@ -410,7 +410,8 @@ img.caroussel__picture__img {
 
 .card {
   width: 13rem;
-  background-color: #213945;
+  background-color: #87735c;
+  border-radius: 1rem;
   flex-direction: column;
   margin-top: 2vw;
   display: flex;
@@ -435,10 +436,17 @@ img.caroussel__picture__img {
 }
 
 .span {
-  color: #a0a0a0;
+  color: #0000008f;
   align-items: center;
   gap: 1%;
   display: inline-flex;
+}
+
+.span p {
+  height: 1.3rem;
+  font-family: poppins, sans-serif;
+  font-size: .6rem;
+  overflow: hidden;
 }
 
 .card_bottom {
@@ -450,7 +458,7 @@ img.caroussel__picture__img {
 }
 
 .white {
-  color: #fff;
+  color: #000;
 }
 
 .card_img {
@@ -460,6 +468,7 @@ img.caroussel__picture__img {
 .card img {
   height: 294px;
   object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
 }
 
 .card_bottom p {
@@ -483,10 +492,15 @@ img.caroussel__picture__img {
 
 @media screen and (min-width: 900px) {
   .card_bottom p {
-    font-size: 1.2rem;
+    font-size: 1rem;
+  }
+
+  .span p {
+    font-size: .8rem;
   }
 
   .tag {
+    color: #0000008f;
     margin-top: 5px;
   }
 }
@@ -497,7 +511,7 @@ img.caroussel__picture__img {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  padding: 1rem;
+  padding: 2rem 1rem 1rem;
   display: flex;
 }
 
@@ -506,6 +520,7 @@ img.caroussel__picture__img {
   height: 80px;
   text-align: center;
   background-color: #87735c;
+  border-radius: .5rem;
   font-size: large;
   font-weight: 1000;
 }

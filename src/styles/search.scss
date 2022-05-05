@@ -61,11 +61,12 @@
 }
 .card {
   margin-top: 2vw;
-  background-color: #213945;
+  background-color: #87735c;
   width: 13rem;
 
   display: flex;
   flex-direction: column;
+  border-radius: 1rem;
 }
 .card p {
   font-family: "poppins", sans-serif;
@@ -88,8 +89,14 @@
 .span {
   display: inline-flex;
   align-items: center;
-  color: #a0a0a0;
+  color: rgba(0, 0, 0, 0.56);
   gap: 1%;
+}
+.span p {
+  height: 1.3rem;
+  font-size: 0.6rem;
+  overflow: hidden;
+  font-family: "poppins", sans-serif;
 }
 .card_bottom {
   display: flex;
@@ -100,7 +107,7 @@
   gap: 3px;
 }
 .white {
-  color: white;
+  color: black;
 }
 
 .card_img {
@@ -109,6 +116,7 @@
 .card img {
   height: 294px;
   object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
 }
 
 .card_bottom p {
@@ -152,16 +160,15 @@
   } */
 
 @media screen and (min-width: 900px) {
-  .card {
-    /*           width: 14%;
-      height: 37%; */
-    /* width: 186px; */
-  }
   .card_bottom p {
-    font-size: 1.2rem;
+    font-size: 1rem;
+  }
+  .span p {
+    font-size: 0.8rem;
   }
   .tag {
     margin-top: 5px;
+    color: rgba(0, 0, 0, 0.56);
   }
 }
 .tab-genre {
@@ -171,7 +178,7 @@
   justify-content: center;
   width: 100vw;
   gap: 10px;
-  padding: 1rem;
+  padding: 2rem 1rem 1rem 1rem;
 }
 .genre {
   width: 120px;
@@ -180,6 +187,7 @@
   text-align: center;
   font-weight: 1000;
   font-size: large;
+  border-radius: 0.5rem;
 }
 .taille-icon {
   width: 50px;
