@@ -159,7 +159,7 @@ nav.active {
 }
 
 .caroussel .caroussel__title {
-  padding: 4vh 0 2vh 2v;
+  padding-bottom: 2vh;
   font-size: 1rem;
 }
 
@@ -482,6 +482,7 @@ img.caroussel__picture__img {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
+  padding-bottom: 6vh;
   display: flex;
 }
 
