@@ -8,7 +8,8 @@ var imgs1 = document.querySelectorAll(".caroussel1__picture");
 var imgs2 = document.querySelectorAll(".caroussel2__picture");
 var imgs3 = document.querySelectorAll(".caroussel3__picture");
 var imgIndex = 0;
-var imgWidth = 26;
+var imgWidth = window.matchMedia("(min-width: 830px)").matches ? 33 : 31;
+var imgWidth = 31;
 var imgWidth0 = 100;
 
 btnDroite[0].addEventListener("click", function () {
@@ -34,7 +35,7 @@ btnGauche[0].addEventListener("click", function () {
 });
 
 btnDroite[1].addEventListener("click", function () {
-  if (imgIndex < imgs1.length - 4) {
+  if (imgIndex < imgs1.length - 3) {
     imgIndex += 1;
     console.log(imgIndex);
     imgs1[0].style.marginLeft = -1 * imgWidth * imgIndex + "vw";
@@ -45,7 +46,7 @@ btnDroite[1].addEventListener("click", function () {
 });
 
 btnGauche[1].addEventListener("click", function () {
-  if (imgIndex > imgs1.length - 4) {
+  if (imgIndex > imgs1.length - 3) {
     imgIndex -= 1;
     imgs1[0].style.marginLeft = -1 * imgWidth * imgIndex + "vw";
   } else {
@@ -55,7 +56,7 @@ btnGauche[1].addEventListener("click", function () {
 });
 
 btnDroite[2].addEventListener("click", function () {
-  if (imgIndex < imgs2.length - 4) {
+  if (imgIndex < imgs2.length - 3) {
     imgIndex += 1;
     imgs2[0].style.marginLeft = -1 * imgWidth * imgIndex + "vw";
   } else {
@@ -65,7 +66,7 @@ btnDroite[2].addEventListener("click", function () {
 });
 
 btnGauche[2].addEventListener("click", function () {
-  if (imgIndex > imgs2.length - 4) {
+  if (imgIndex > imgs2.length - 3) {
     imgIndex -= 1;
     imgs2[0].style.marginLeft = -1 * imgWidth * imgIndex + "vw";
   } else {
@@ -75,7 +76,7 @@ btnGauche[2].addEventListener("click", function () {
 });
 
 btnDroite[3].addEventListener("click", function () {
-  if (imgIndex < imgs3.length - 4) {
+  if (imgIndex < imgs3.length - 3) {
     imgIndex += 1;
     imgs3[0].style.marginLeft = -1 * imgWidth * imgIndex + "vw";
   } else {
@@ -85,7 +86,7 @@ btnDroite[3].addEventListener("click", function () {
 });
 
 btnGauche[3].addEventListener("click", function () {
-  if (imgIndex > imgs3.length - 4) {
+  if (imgIndex > imgs3.length - 3) {
     imgIndex -= 1;
     imgs3[0].style.marginLeft = -1 * imgWidth * imgIndex + "vw";
   } else {

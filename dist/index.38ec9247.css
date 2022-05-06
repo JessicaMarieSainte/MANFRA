@@ -155,6 +155,7 @@ nav.active {
 .caroussel {
   flex-direction: column;
   margin-bottom: 5vh;
+  padding: 0 3vh;
   display: flex;
 }
 
@@ -165,9 +166,10 @@ nav.active {
 
 .caroussel .caroussel__vignette {
   height: 5%;
+  cursor: pointer;
   flex-direction: row;
   justify-content: flex-start;
-  gap: .188rem;
+  gap: 3vw;
   display: flex;
   overflow: hidden;
 }
@@ -182,6 +184,7 @@ nav.active {
 }
 
 .caroussel1__picture, .caroussel2__picture, .caroussel3__picture {
+  padding-left: 2.7vw;
   transition: all .4s;
   position: relative;
 }
@@ -189,7 +192,7 @@ nav.active {
 .caroussel__picture__add {
   transform: translate(50% 50%);
   position: absolute;
-  top: .188rem;
+  top: -1rem;
   right: .188rem;
 }
 
@@ -237,7 +240,6 @@ img.caroussel__picture__img {
 
 .slider {
   width: 100vw;
-  display: contents;
   position: relative;
   overflow: hidden;
 }
@@ -251,7 +253,9 @@ img.caroussel__picture__img {
 
 .slide {
   width: 100vw;
+  cursor: pointer;
   flex-direction: column;
+  padding: 0 5vw;
   transition: all .5s;
   display: flex;
 }
@@ -261,6 +265,7 @@ img.caroussel__picture__img {
   height: 100%;
   z-index: 1000;
   filter: drop-shadow(10px 10px 6px #000);
+  object-fit: contain;
   margin: auto;
 }
 
@@ -324,6 +329,7 @@ img.caroussel__picture__img {
 }
 
 .footer {
+  margin-top: auto;
   padding: 2rem;
   font-size: .7rem;
   font-style: italic;
@@ -540,13 +546,15 @@ body {
   height: 100vh;
   background-image: linear-gradient(125deg, #151728 0%, #191b2e 9%, #1b1d31 18%, #1f2237 27%, #23263e 36%, #252841 45%, #292c47 55%, #2b2e4a 64%, #2f3251 73%, #333757 82%, #35395a 91%, #393d60 100%);
   background-attachment: fixed;
+  flex-direction: column;
   font-family: poppins, sans-serif;
   font-size: 3rem;
+  display: flex;
 }
 
-@media screen and (min-width: 830px) {
+@media screen and (min-width: 861px) {
   .header {
-    padding: 1.5vh 2vw;
+    padding: 1.5vh 3vw;
   }
 
   .nav__burger span {
@@ -601,6 +609,10 @@ body {
   .caroussel .caroussel__title {
     padding: 4vh 0 2vh 2vh;
     font-size: 1.5rem;
+  }
+
+  .caroussel1__picture, .caroussel2__picture, .caroussel3__picture {
+    padding-left: 4vw;
   }
 }
 

@@ -36,11 +36,13 @@ body {
 
   background-attachment: fixed;
   font-size: 3rem;
+  display: flex;
+  flex-direction: column;
 }
 
-@media screen and (min-width: 830px) {
+@media screen and (min-width: 861px) {
   .header {
-    padding: 1.5vh 2vw;
+    padding: 1.5vh 3vw;
   }
   .nav__burger span {
     display: none;
@@ -84,5 +86,10 @@ body {
   .caroussel .caroussel__title {
     padding: 4vh 0 2vh 2vh;
     font-size: 1.5rem;
+  }
+  .caroussel1__picture,
+  .caroussel2__picture,
+  .caroussel3__picture {
+    padding-left: 4vw;
   }
 }

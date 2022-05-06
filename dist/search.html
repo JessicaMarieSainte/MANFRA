@@ -128,7 +128,15 @@
 
     <div class="show"></div>
     <div class="show_deux"></div>
-    
+    <footer class="footer">
+      <ul>
+        <li class="footer__link">Règles de respect de la vie privée</li>
+        <li class="footer__link">Modalités relatives aux cookies</li>
+        <li class="footer__link">A propos de MANFRA</li>
+        <li class="footer__link">Droits données dans l'UE et en FR</li>
+        <li class="footer__link">Aide</li>
+      </ul>
+    </footer>
     <script>$input = document.querySelector("input");
 $form = document.querySelector("form");
 let parent = document.querySelector(".parent");
@@ -299,6 +307,17 @@ for(let i = 0; i < $button.length; i++)$button[i].addEventListener("click", func
     let go = document.querySelectorAll(".show_deux .card");
     console.log(go);
     go.textContent = "";
+});
+// javascript du buger menu
+const burger = document.querySelector(".nav__burger");
+const nav = document.querySelector("nav");
+const navLinks = document.querySelector(".nav__menuDeroulant");
+const navLink = document.querySelectorAll(".menuDeroulant__link");
+burger.addEventListener("click", ()=>{
+    nav.classList.toggle("active");
+    navLinks.classList.toggle("active");
+    navLink.forEach((a)=>a.classList.toggle("active")
+    );
 });
 
 </script>

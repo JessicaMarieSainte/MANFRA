@@ -1,8 +1,8 @@
 .slider {
-  display: contents;
   width: 100vw;
   overflow: hidden;
   position: relative;
+  overflow: hidden;
 }
 .slides {
   display: flex;
@@ -16,6 +16,8 @@
   flex-direction: column;
   width: 100vw;
   transition: all 0.5s;
+  padding: 0 5vw;
+  cursor: pointer;
 
   .taille-slide {
     width: 90vw;
@@ -23,6 +25,7 @@
     margin: auto;
     z-index: 1000;
     filter: drop-shadow(10px 10px 6px black);
+    object-fit: contain;
   }
   .slide__description {
     font-family: "poppins", sans-serif;
