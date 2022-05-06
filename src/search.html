@@ -65,9 +65,10 @@
             alt=""
           />
         </label>
-
         <input size="100" type="text" />
+      </form>
 
+      <div class="parent"></div>
     </div>
 
     <section class="tab-genre">
@@ -203,17 +204,9 @@
 
     <div class="show"></div>
     <div class="show_deux"></div>
-    <footer class="footer">
-      <ul>
-        <li class="footer__link">Règles de respect de la vie privée</li>
-        <li class="footer__link">Modalités relatives aux cookies</li>
-        <li class="footer__link">A propos de MANFRA</li>
-        <li class="footer__link">Droits données dans l'UE et en FR</li>
-        <li class="footer__link">Aide</li>
-      </ul>
-    </footer>
+
     <script>
-        $input = document.querySelector("input");
+      $input = document.querySelector("input");
       $form = document.querySelector("form");
       let parent = document.querySelector(".parent");
       let resp;
@@ -227,7 +220,7 @@
       $form.addEventListener("submit", function (event) {
         event.preventDefault();
         /* show_deux.remove(); */
-        show.textContent = ""; 
+        show.textContent = "";
         show_deux.textContent = "";
         fetch("https://api.jikan.moe/v4/manga?q=" + $input.value)
           .then((response) => response.json())
@@ -270,7 +263,6 @@
               let pdeux = document.createElement("p");
               let divdeux = document.createElement("div");
               let ptrois = document.createElement("p");
-
 
               show_deux.appendChild(paarent);
               paarent.appendChild(img);
@@ -355,7 +347,8 @@
           fetch("https://api.jikan.moe/v4/manga?genres=" + tab[i])
             .then((response) => response.json())
             .then((response) => {
-              show_deux.textContent = ""; show.textContent = ""; 
+              show_deux.textContent = "";
+              show.textContent = "";
               for (var a = 0; a < response.data.length; a++) {
                 let paarent = document.createElement("div");
                 let img = document.createElement("img");
@@ -384,7 +377,6 @@
                 p.textContent = response.data[i].title;
                 pdeux.textContent = "Manga";
                 ptrois.textContent = "VOST";
-
               }
             });
           let go = document.querySelectorAll(".show_deux .card");
@@ -392,18 +384,6 @@
           go.textContent = "";
         });
       }
-      // javascript du buger menu
-const burger = document.querySelector(".nav__burger");
-const nav = document.querySelector("nav");
-const navLinks = document.querySelector(".nav__menuDeroulant");
-const navLink = document.querySelectorAll(".menuDeroulant__link");
-
-burger.addEventListener("click", () => {
-  nav.classList.toggle("active");
-  navLinks.classList.toggle("active");
-  navLink.forEach((a) => a.classList.toggle("active"));
-});
     </script>
-
   </body>
 </html>
